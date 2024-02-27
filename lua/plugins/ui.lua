@@ -1,6 +1,7 @@
 return {
   {
     "nvimdev/dashboard-nvim",
+    enabled = false,
     event = "VimEnter",
     opts = function(_, opts)
       local logo = [[
@@ -138,30 +139,6 @@ return {
     -- optional for floating window border decoration
     dependencies = {
       "nvim-lua/plenary.nvim",
-    },
-  },
-  {
-    "kristijanhusak/vim-dadbod-ui",
-    dependencies = {
-      { "tpope/vim-dadbod", lazy = true },
-      { "kristijanhusak/vim-dadbod-completion", ft = { "sql", "mysql", "plsql" }, lazy = true },
-    },
-    cmd = {
-      "dbui",
-      "dbuitoggle",
-      "dbuiaddconnection",
-      "dbuifindbuffer",
-    },
-    init = function()
-      -- your dbui configuration
-      vim.g.db_ui_use_nerd_fonts = 1
-    end,
-    keys = {
-      {
-
-        "<leader>d",
-        "<cmd>nvimtreeclose<cr><cmd>tabnew<cr><bar><bar><cmd>dbui<cr>",
-      },
     },
   },
   {
