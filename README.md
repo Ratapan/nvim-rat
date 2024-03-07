@@ -5,6 +5,18 @@ Trate de no enredar tanto el código y de dejar anotaciones, también deje mucho
 
 ## Instalación
 
+### Instalar Silicon para generar screenshots
+
+```bash
+sudo pacman -S silicon
+```
+
+### Instalar mis configs
+
 ```bash
 git clone https://github.com/Ratapan/nvim-rat ~/.config/nvim
 ```
+
+### Codeium
+
+tienes que crear una cuenta de [Codeium](https://codeium.com/) y agregarla a tu nvim config con `:` + `Codeium Auth`

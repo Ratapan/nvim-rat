@@ -3,11 +3,11 @@ return {
     "Exafunction/codeium.vim",
     event = "BufEnter",
     config = function()
-      vim.keymap.set("i", "<C-tab>", function()
+      vim.keymap.set("i", "<C-;>", function()
         return vim.fn["codeium#Accept"]()
       end, { expr = true, silent = true })
 
-      vim.keymap.set("i", "<c-;>", function()
+      vim.keymap.set("i", "<c-g>", function()
         return vim.fn["codeium#CycleCompletions"](1)
       end, { expr = true, silent = true })
 
