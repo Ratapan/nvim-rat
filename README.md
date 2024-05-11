@@ -11,6 +11,14 @@ Trate de no enredar tanto el código y de dejar anotaciones, también deje mucho
 brew install nvim lazygit gcc fzf make ripgrep
 ```
 
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+```
+
+```bash
+nvm install --lts
+```
+
 ### Instalar Silicon para generar screenshots
 
 ```bash
